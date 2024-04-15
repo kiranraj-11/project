@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./signup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>;
+</head>
+<body>
+    <header>
+        <div class="border">
+            <img src="Images/curved14.jpg" alt="image">
+         <ul type="none"  >
+            <a href="#" id="ui"> Soft UI Dashboard </a>
+            <button id="list-icon" onclick="togglemenu()"  ><i class="fa-solid fa-list"></i></button>
+            <nav>
+                <ul id="menuList" type="none">
+            <li><a href="#" class="lis1" >Dashboard</a></li>
+            <li><a href="#" class="lis2">Profile</a></li>
+            <li><a href="/sampleproject/sign in.html" class="lis3">Sign in</a></li>
+            <li><a href="" class="lis4">Sign Up</a></li>
+        </ul>
+    </nav>
+          <button id="but1">Online Builder</button>
+           <button id="but2">Free Download</button>
+            </ul>
+        <div id="cen">
+        <h1 id="wel"> Welcome!</h1>
+        <p id="para1">Use these awesome forms to login or create your new account in your <br>project for free </p>
+        </div>
+    </div>
+    </header>
+    <main>
+        <form id="Form" >
+        <p class="reg">Register with</p>
+        <ul type="none" id="icon">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a> </li>
+            <li><a href="#"><i class="fa-brands fa-apple"></i></a> </li>
+            <li><a href="#"><i class="fa-brands fa-google"></i></a> </li>
+        </ul>
+        <p class="or">or</p>
+        
+        <div class="input">
+            <input type="text" placeholder="Username" id="Username"  name="Username"/>
+            <div id="Name_error"></div>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Email" id="Email" name="email" />
+            <div id="Email_error"></div>
+        </div>
+        <div class="input">
+            <input type="password" placeholder="Password" id="Password" name="password" />
+            <div id="Pass_error"> </div>
+        </div>  
+        <div class="input">
+            <input type="password" placeholder="Confirmpassword" id="Cpassword" name="cpassword" />
+            <div id="Cpass_error"></div>
+        </div>
+        </div>
+           <span id="check"><input type="checkbox"> I agree the <a href="# "  class="check"><strong>Terms and Conditions</strong></a></span>
+        <button class="Submit" type="submit">Sign up</button>
+            <div id="message" style="display:none;" >Logged in Successfully</div>
+        <p class="in">Already have an account?<a href="/sampleproject/sign in.html"  class="a1"><strong>Sign in</strong></a></p>
+    </form>
+<div id="footer">
+    <ul type="none" id="ul2">
+        <li class="list">Company</li>
+        <li  class="list">About us</li>
+        <li  class="list">Team</li>
+        <li  class="list">Products</li>
+        <li  class="list">Blog</li>
+        <li class="list">Pricing</li>
+    </ul>
+    <ul type="none" id="ul3" >
+        <li class="list2">Twitter</li>
+        <li class="list2">Instagram</li>
+        <li class="list2">Email</li>
+        <li class="list2">Facebook</li>
+    </ul>  
+    <p id="copy">Copyright &copy; 2024 soft by Creative Tim.</p>    
+</div>
+</body>
+</html>

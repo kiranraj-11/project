@@ -1,0 +1,469 @@
+*{
+  margin:0px;
+  padding:0px;
+  
+}
+ul{
+  display:flex;}
+body{
+  overflow-x:hidden;
+}
+li{
+  padding-left:20px;
+   
+}
+#Email_error{
+  color:red;
+ /* position:relative;
+  top:100px;*/
+}
+#Pass_error{
+  color:red;
+ /* position:relative;
+  top:140px;*/
+}
+#Message{
+  color:#006400;
+  position:relative;
+  top:30px;
+  left:40px;
+  font-size: 1.2em;
+}
+
+button{
+  margin-left:10px;
+  height:30px;
+  width:120px;
+  border-radius:15px;
+}
+.border{
+  text-align:center;
+  border:3px solid #fff;
+  border-radius:25px;
+  box-shadow:1px 3px 1px #dcdcdc;
+  position:fixed;
+  top:20px;
+  z-index:2;
+ display:inline-block;
+ margin-left:100px;
+ padding:5px;
+ background: radial-gradient(800px at 20.4% 22.3%, #fff 40%, rgba(223,159, 247,0.8) 99.9%);
+ 
+}
+.two{
+  overflow:hidden;
+}
+img{
+ position:fixed;
+  z-index:-2;
+  left:56%;
+  border-bottom-left-radius:8%;
+  width:643px ;
+  height:480px;
+  transform:skew(-10deg);
+}
+#ui{
+  margin-left:25px;  
+  font-weight:bold; 
+  position:absolute;
+  top:14px;
+}
+.lis1{
+position:absolute;
+ left: 400px;
+ top:14px;
+ color:grey;
+ font-size: small;
+}
+
+.lis2{
+  position:absolute;
+  top:14px;
+   left:475px;
+   color:grey;
+ font-size: small;
+
+}
+  .lis3{
+    position:absolute;
+     left:525px;
+     top:14px;
+     color:grey;
+ font-size: small;
+    }
+    .lis4{
+      position:absolute;
+       left:580px;
+       top:14px;
+       color:grey;
+ font-size: small;
+      }
+   
+   #but1{
+    width:120px;
+    height:30px;
+    border-radius:30px;
+    background-color: transparent;
+    border:1px solid purple;
+    color:purple;
+    cursor:pointer;
+    margin-left:700px;
+   
+   }
+   
+   #but2{
+    width:160px;
+    height:30px;
+    border-radius:15px;
+    background-color:black;
+    padding:5px;
+    color:white;
+    cursor:pointer;
+    margin-right:20px;
+   }
+   a{
+    text-decoration:none;
+    color:black;
+    
+   }
+
+   #bg{
+    position:absolute;
+    left:900px;
+    z-index:-2;
+    border-radius: 0 0 90% 90% / 15em;  
+    
+    
+   }
+   .tog{
+    position:relative;
+    top:10px;
+   }
+   
+   input.tog{
+    display:none;
+    
+   }
+  label.tog{
+    display:block;
+    width:50px;
+    height:21px;
+    border-radius:15px; 
+    background-color:grey;
+    cursor:pointer;
+    
+  }
+label.tog::before{
+  content:"";
+  display:block;
+  width:50%;
+  height:20px;
+  border-radius:38%;
+  background-color:#fff;
+}
+input.tog:checked + label.tog{
+  background-color:#191970;
+}
+input.tog:checked+ label.tog::before{
+  transform:translatex(100%);
+}
+label.tog,label.tog::before{
+  transition: all 0.3s;
+}
+#sign{
+  position:relative;
+  left:-9px;
+  top:20px;
+  width:300px;
+  height:35px;
+  color:white;
+  border:0px ;
+  border-radius:7px;
+  background: rgb(131,58,180);
+  background-image: linear-gradient(to right, #00bfff 30px, #4169E1);
+}
+  input{
+  width:280px;
+  height:20px;
+  border:1px solid lightgrey;
+  border-radius:7px;
+  padding:7px;
+  margin-top:10px;
+}
+#container{
+  position:relative;
+  left:200px;
+  top:100px;
+ /*z-index:-2;
+   background-color:white;*/
+
+  
+  
+}
+#up{
+  font-size: 20px;
+  font-size:medium;
+ background: -webkit-linear-gradient(#87CEFF, #1429E3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #00bfff 30px, #00008B);
+ 
+  cursor:pointer; 
+  
+  
+}
+.para{
+  position:relative;
+  top:36px;
+  left:30px;
+}
+
+
+ h1{
+  
+
+    background-image: linear-gradient(to right, #149be3, #1429e3);
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: transparent; 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color: transparent;
+  
+}
+#ul2{
+  
+  display:flex;
+  justify-content:space-between;
+  position:fixed;
+  left:30%;
+  bottom:70px;
+  color:grey;
+}
+.list{
+  padding:20px;
+  display:flex;
+}
+.list2{
+  color:red;
+}
+#ul3{
+  
+  display:flex;
+  justify-content:space-between;
+  position:fixed;
+  left:38%;
+  bottom:50px;
+  font-size:medium ;
+  
+}
+
+#copy{
+  position:fixed;
+  left: 40%;
+  bottom:15px;
+  color:grey;
+}
+#p{
+color:grey;
+
+}
+#para{
+  position:relative;
+  top:-10px;
+  left:80px;
+}
+@media  screen and (max-width:760px){
+
+  
+  body{
+    overflow-x:hidden;
+    position:fixed;
+  }
+
+  .border{
+    height:25px;
+    text-align:center;
+    border:3px solid #fff;
+    border-radius:25px;
+    box-shadow:1px 3px 1px #dcdcdc;
+    position:fixed;
+    top:20px;
+    z-index:2;
+   display:inline-block;
+   margin-left:13px;
+   padding:5px;
+   background: radial-gradient(800px at 20.4% 22.3%, #fff 40%, rgba(223,159, 247,0.8) 99.9%);
+  }
+
+  img{
+    position:fixed;
+     z-index:-2;
+     left:55%;
+     border-bottom-left-radius:8%;
+     
+     width:390px ;
+     height:380px;
+     transform:skew(-10deg)
+   }
+
+  #ui{
+    margin-left:15px;  
+    font-weight:bold; 
+    font-size:small;
+    position:absolute;
+    top:14px;
+} 
+.lis1{
+  position:absolute;
+   left: 190px;
+   top:12px;
+   color:grey;
+   font-size: small;
+  }
+  
+  .lis2{
+    position:absolute;
+    top:12px;
+     left:260px;
+     color:grey;
+   font-size: small;
+  
+  }
+    .lis3{
+      position:absolute;
+       left:308px;
+       top:12px;
+       color:grey;
+   font-size: small;
+      }
+      .lis4{
+        position:absolute;
+         left:360px;
+         top:12px;
+         color:grey;
+        font-size: small;
+        }
+
+        #but1{
+          width:110px;
+          height:25px;
+          border-radius:30px;
+          color:purple;
+          cursor:pointer;
+          margin-left:380px;
+         
+         }
+         
+         #but2{
+          width:120px;
+          height:24px;
+          border-radius:15px;
+          background-color:black;
+          padding:3px;
+          color:white;
+          cursor:pointer;
+          margin-right:20px;
+         }
+         #table{
+          position:fixed;
+          left:90px;
+          
+          top:100px;
+          z-index:2;
+          background-color:white;
+        
+         }
+         h1{
+          font-size:110%;
+         }
+         #p{
+          color:grey;
+          font-size:80%;
+          position:relative;
+          top:-8px;
+          }
+          
+          input{
+            width:250px;
+            height:20px;
+            border:1px solid lightgrey;
+            border-radius:5px;
+            padding:5px;
+          }
+          
+          .up1{
+            position:absolute;
+            top:60px;
+            
+          }
+          label.tog{
+            display:block;
+            width:40px;
+            height:18px;
+            border-radius:15px; 
+            background-color:grey;
+            cursor:pointer;
+            
+          }
+
+          label.tog::before{
+            content:"";
+            display:block;
+            width:49%;
+            height:18px;
+            border-radius:38%;
+            background-color:#fff;
+          }
+
+          #para{
+            position:fixed;
+            top:276px;
+            left:150px;
+          }
+          #sign{
+            position:relative;
+            left:-12px;
+            width:263px;
+            height:30px;
+            color:white;
+            border:0px ;
+            border-radius:7px;
+            background: rgb(131,58,180);
+            background-image: linear-gradient(to right, #00bfff 30px, #4169E1);
+          }
+          #ul2{
+  
+            display:flex;
+            justify-content:flex-start;
+            position:relative;
+            left:45%;
+            bottom:-380px;
+            color:grey;
+          }
+          .list{
+            padding:13px;
+            display:flex;
+          }
+          #ul3{
+  
+            display:flex;
+            justify-content:flex-start;
+            position:relative;
+            left:60%;
+            bottom:-383px;
+            font-size:100% ;
+            
+          }
+          
+          #copy{
+            position:relative;
+            left:69%;
+            top:400px;
+            color:grey;
+            font-size:90%;
+          }
+}
+@media screen and (max-width:600px){
+
+}
